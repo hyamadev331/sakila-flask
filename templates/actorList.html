@@ -1,0 +1,4 @@
+{% for actor in actors %}
+    <p>{{ actor.first_name + actor.last_name }}</p>
+    <a href="{{ url_for('routes.actor', actor_id=actor.actor_id) }}">View Actor</a>
+{% endfor %}
